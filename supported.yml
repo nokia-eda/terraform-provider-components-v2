@@ -1,0 +1,72 @@
+datasources:
+  - model_name: app_group
+    oas_endpoint: /apps/components.eda.nokia.com
+    oas_schema: AppGroup
+  - model_name: resource_list
+    oas_endpoint: /apps/components.eda.nokia.com/v2
+    oas_schema: ResourceList
+  - model_name: chassis_list
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/chassis
+    oas_schema: com.nokia.eda.components.v2.ChassisList
+  - model_name: chassis
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/chassis/{name}
+    oas_schema: com.nokia.eda.components.v2.Chassis
+  - model_name: component_list
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/components
+    oas_schema: com.nokia.eda.components.v2.ComponentList
+  - model_name: component
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/components/{name}
+    oas_schema: com.nokia.eda.components.v2.Component
+  - model_name: control_module_list
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/controlmodules
+    oas_schema: com.nokia.eda.components.v2.ControlModuleList
+  - model_name: control_module
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/controlmodules/{name}
+    oas_schema: com.nokia.eda.components.v2.ControlModule
+  - model_name: fabric_module_list
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/fabricmodules
+    oas_schema: com.nokia.eda.components.v2.FabricModuleList
+  - model_name: fabric_module
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/fabricmodules/{name}
+    oas_schema: com.nokia.eda.components.v2.FabricModule
+  - model_name: fan_list
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/fans
+    oas_schema: com.nokia.eda.components.v2.FanList
+  - model_name: fan
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/fans/{name}
+    oas_schema: com.nokia.eda.components.v2.Fan
+  - model_name: interface_module_list
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/interfacemodules
+    oas_schema: com.nokia.eda.components.v2.InterfaceModuleList
+  - model_name: interface_module
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/interfacemodules/{name}
+    oas_schema: com.nokia.eda.components.v2.InterfaceModule
+  - model_name: monitor_list
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/monitors
+    oas_schema: com.nokia.eda.components.v2.MonitorList
+  - model_name: monitor
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/monitors/{name}
+    oas_schema: com.nokia.eda.components.v2.Monitor
+  - model_name: power_supply_list
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/powersupplies
+    oas_schema: com.nokia.eda.components.v2.PowerSupplyList
+  - model_name: power_supply
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/powersupplies/{name}
+    oas_schema: com.nokia.eda.components.v2.PowerSupply
+
+resources:
+  - model_name: monitor
+    oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/monitors
+    oas_schema: com.nokia.eda.components.v2.Monitor
+
+qualified:
+  datasources:
+    - oas_schema: IntentTargets
+      get: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/chassis/{name}/_targets
+    - oas_schema: ResourceHistory
+      get: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/chassis/{name}/_revs
+    - oas_schema: UIResult
+      get: /apps/components.eda.nokia.com/v2/_ui/{pathname}
+    - oas_schema: com.nokia.eda.components.v2.Monitor_DeletedResources
+      get: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/monitors/_deleted
+  resources:
