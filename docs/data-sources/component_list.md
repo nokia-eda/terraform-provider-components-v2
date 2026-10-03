@@ -35,10 +35,6 @@ description: |-
 <a id="nestedatt--items"></a>
 ### Nested Schema for `items`
 
-Optional:
-
-- `spec` (Attributes) ComponentSpec defines the desired state of Component (see [below for nested schema](#nestedatt--items--spec))
-
 Read-Only:
 
 - `alarms` (Attributes) (see [below for nested schema](#nestedatt--items--alarms))
@@ -46,18 +42,8 @@ Read-Only:
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--items--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--items--metadata))
+- `spec` (Attributes) ComponentSpec defines the desired state of Component (see [below for nested schema](#nestedatt--items--spec))
 - `status` (Attributes) ComponentStatus defines the observed state of Component (see [below for nested schema](#nestedatt--items--status))
-
-<a id="nestedatt--items--spec"></a>
-### Nested Schema for `items.spec`
-
-Optional:
-
-- `node` (String) TopologyNode this Component resides on.
-Indicates the operation in which to apply the configuration
-- `slot` (String) Slot this Component resides in, unset for Components that do not have a slot or ID.
-- `type` (String) Type of Component.
-
 
 <a id="nestedatt--items--alarms"></a>
 ### Nested Schema for `items.alarms`
@@ -87,6 +73,17 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--items--spec"></a>
+### Nested Schema for `items.spec`
+
+Read-Only:
+
+- `node` (String) TopologyNode this Component resides on.
+Indicates the operation in which to apply the configuration
+- `slot` (String) Slot this Component resides in, unset for Components that do not have a slot or ID.
+- `type` (String) Type of Component.
 
 
 <a id="nestedatt--items--status"></a>

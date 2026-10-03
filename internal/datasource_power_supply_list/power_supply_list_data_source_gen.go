@@ -108,7 +108,7 @@ func PowerSupplyListDataSourceSchema(ctx context.Context) schema.Schema {
 									AttrTypes: SpecValue{}.AttributeTypes(ctx),
 								},
 							},
-							Optional:            true,
+							Computed:            true,
 							Description:         "PowerSupplySpec defines the desired state of PowerSupply",
 							MarkdownDescription: "PowerSupplySpec defines the desired state of PowerSupply",
 						},

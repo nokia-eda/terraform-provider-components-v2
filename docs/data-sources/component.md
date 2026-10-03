@@ -23,7 +23,6 @@ description: |-
 ### Optional
 
 - `hash` (String) resource content will be returned as it was at the time of this git hash
-- `spec` (Attributes) ComponentSpec defines the desired state of Component (see [below for nested schema](#nestedatt--spec))
 
 ### Read-Only
 
@@ -32,18 +31,8 @@ description: |-
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--metadata))
+- `spec` (Attributes) ComponentSpec defines the desired state of Component (see [below for nested schema](#nestedatt--spec))
 - `status` (Attributes) ComponentStatus defines the observed state of Component (see [below for nested schema](#nestedatt--status))
-
-<a id="nestedatt--spec"></a>
-### Nested Schema for `spec`
-
-Optional:
-
-- `node` (String) TopologyNode this Component resides on.
-Indicates the operation in which to apply the configuration
-- `slot` (String) Slot this Component resides in, unset for Components that do not have a slot or ID.
-- `type` (String) Type of Component.
-
 
 <a id="nestedatt--alarms"></a>
 ### Nested Schema for `alarms`
@@ -73,6 +62,17 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--spec"></a>
+### Nested Schema for `spec`
+
+Read-Only:
+
+- `node` (String) TopologyNode this Component resides on.
+Indicates the operation in which to apply the configuration
+- `slot` (String) Slot this Component resides in, unset for Components that do not have a slot or ID.
+- `type` (String) Type of Component.
 
 
 <a id="nestedatt--status"></a>

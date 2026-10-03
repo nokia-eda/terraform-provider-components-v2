@@ -104,29 +104,29 @@ func MonitorDataSourceSchema(ctx context.Context) schema.Schema {
 					"cpu": schema.SingleNestedAttribute{
 						Attributes: map[string]schema.Attribute{
 							"enabled": schema.BoolAttribute{
-								Optional:            true,
+								Computed:            true,
 								Description:         "Enable or disable CPU monitoring.",
 								MarkdownDescription: "Enable or disable CPU monitoring.",
 							},
 							"utilization": schema.SingleNestedAttribute{
 								Attributes: map[string]schema.Attribute{
 									"critical_threshold": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold.",
 										MarkdownDescription: "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold.",
 									},
 									"falling_delta": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.",
 										MarkdownDescription: "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.",
 									},
 									"major_threshold": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold.",
 										MarkdownDescription: "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold.",
 									},
 									"minor_threshold": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The minimum average utilization over the last 1 minute to trigger a minor alarm.",
 										MarkdownDescription: "The minimum average utilization over the last 1 minute to trigger a minor alarm.",
 									},
@@ -136,7 +136,7 @@ func MonitorDataSourceSchema(ctx context.Context) schema.Schema {
 										AttrTypes: UtilizationValue{}.AttributeTypes(ctx),
 									},
 								},
-								Optional:            true,
+								Computed:            true,
 								Description:         "Parameters relating to CPU utilization monitoring.",
 								MarkdownDescription: "Parameters relating to CPU utilization monitoring.",
 							},
@@ -146,36 +146,36 @@ func MonitorDataSourceSchema(ctx context.Context) schema.Schema {
 								AttrTypes: CpuValue{}.AttributeTypes(ctx),
 							},
 						},
-						Optional:            true,
+						Computed:            true,
 						Description:         "CPU monitoring for targets matching this Monitor.",
 						MarkdownDescription: "CPU monitoring for targets matching this Monitor.",
 					},
 					"memory": schema.SingleNestedAttribute{
 						Attributes: map[string]schema.Attribute{
 							"enabled": schema.BoolAttribute{
-								Optional:            true,
+								Computed:            true,
 								Description:         "Enable or disable memory monitoring.",
 								MarkdownDescription: "Enable or disable memory monitoring.",
 							},
 							"utilization": schema.SingleNestedAttribute{
 								Attributes: map[string]schema.Attribute{
 									"critical_threshold": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold.",
 										MarkdownDescription: "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold.",
 									},
 									"falling_delta": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.",
 										MarkdownDescription: "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.",
 									},
 									"major_threshold": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold.",
 										MarkdownDescription: "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold.",
 									},
 									"minor_threshold": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The minimum average utilization over the last 1 minute to trigger a minor alarm.",
 										MarkdownDescription: "The minimum average utilization over the last 1 minute to trigger a minor alarm.",
 									},
@@ -185,7 +185,7 @@ func MonitorDataSourceSchema(ctx context.Context) schema.Schema {
 										AttrTypes: Utilization1Value{}.AttributeTypes(ctx),
 									},
 								},
-								Optional:            true,
+								Computed:            true,
 								Description:         "Parameters relating to memory utilization monitoring.",
 								MarkdownDescription: "Parameters relating to memory utilization monitoring.",
 							},
@@ -195,48 +195,48 @@ func MonitorDataSourceSchema(ctx context.Context) schema.Schema {
 								AttrTypes: MemoryValue{}.AttributeTypes(ctx),
 							},
 						},
-						Optional:            true,
+						Computed:            true,
 						Description:         "Memory monitoring for targets matching this Monitor.",
 						MarkdownDescription: "Memory monitoring for targets matching this Monitor.",
 					},
 					"target_selectors": schema.ListAttribute{
 						ElementType:         types.StringType,
-						Optional:            true,
+						Computed:            true,
 						Description:         "Selector to use when including targets to monitor.",
 						MarkdownDescription: "Selector to use when including targets to monitor.",
 					},
 					"targets": schema.ListAttribute{
 						ElementType:         types.StringType,
-						Optional:            true,
+						Computed:            true,
 						Description:         "References to targets to monitor.",
 						MarkdownDescription: "References to targets to monitor.",
 					},
 					"volume": schema.SingleNestedAttribute{
 						Attributes: map[string]schema.Attribute{
 							"enabled": schema.BoolAttribute{
-								Optional:            true,
+								Computed:            true,
 								Description:         "Enable or disable volume monitoring.",
 								MarkdownDescription: "Enable or disable volume monitoring.",
 							},
 							"utilization": schema.SingleNestedAttribute{
 								Attributes: map[string]schema.Attribute{
 									"critical_threshold": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold.",
 										MarkdownDescription: "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold.",
 									},
 									"falling_delta": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.",
 										MarkdownDescription: "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.",
 									},
 									"major_threshold": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold.",
 										MarkdownDescription: "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold.",
 									},
 									"minor_threshold": schema.Int64Attribute{
-										Optional:            true,
+										Computed:            true,
 										Description:         "The minimum average utilization over the last 1 minute to trigger a minor alarm.",
 										MarkdownDescription: "The minimum average utilization over the last 1 minute to trigger a minor alarm.",
 									},
@@ -246,7 +246,7 @@ func MonitorDataSourceSchema(ctx context.Context) schema.Schema {
 										AttrTypes: Utilization2Value{}.AttributeTypes(ctx),
 									},
 								},
-								Optional:            true,
+								Computed:            true,
 								Description:         "Parameters relating to volume utilization monitoring.",
 								MarkdownDescription: "Parameters relating to volume utilization monitoring.",
 							},
@@ -256,7 +256,7 @@ func MonitorDataSourceSchema(ctx context.Context) schema.Schema {
 								AttrTypes: VolumeValue{}.AttributeTypes(ctx),
 							},
 						},
-						Optional:            true,
+						Computed:            true,
 						Description:         "Volume monitoring for targets matching this Monitor.",
 						MarkdownDescription: "Volume monitoring for targets matching this Monitor.",
 					},
@@ -266,7 +266,7 @@ func MonitorDataSourceSchema(ctx context.Context) schema.Schema {
 						AttrTypes: SpecValue{}.AttributeTypes(ctx),
 					},
 				},
-				Optional:            true,
+				Computed:            true,
 				Description:         "MonitorSpec defines the desired state of Monitor",
 				MarkdownDescription: "MonitorSpec defines the desired state of Monitor",
 			},

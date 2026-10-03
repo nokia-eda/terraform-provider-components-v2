@@ -87,9 +87,24 @@ data_sources:
       path: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/powersupplies
       method: GET
 
+  reboot:
+    read:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}
+      method: GET
+
+  reboot_list:
+    read:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots
+      method: GET
+
   resource_list:
     read:
       path: /apps/components.eda.nokia.com/v2
+      method: GET
+
+  workflow_get_inputs_resp_elem:
+    read:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_input
       method: GET
 
 resources:
@@ -105,4 +120,15 @@ resources:
       method: PUT
     delete:
       path: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/monitors/{name}
+      method: DELETE
+
+  reboot:
+    create:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots
+      method: POST
+    read:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}
+      method: GET
+    delete:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}
       method: DELETE

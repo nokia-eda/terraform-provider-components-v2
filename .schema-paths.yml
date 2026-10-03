@@ -75,6 +75,16 @@ ui_result:
       path: /apps/components.eda.nokia.com/v2/_ui/{pathname}
       method: GET
 
+workflow_get_inputs_resp_elem:
+  - read:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_input
+      method: GET
+
+workflow_input_data:
+  - update:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_input
+      method: PUT
+
 com.nokia.eda.components.v2.chassis:
   - read:
       path: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/chassis/{name}
@@ -196,10 +206,26 @@ com.nokia.eda.components.v2.power_supply_list:
       path: /apps/components.eda.nokia.com/v2/powersupplies
       method: GET
 
-totalPaths: 45
-totalSchemas: 87
-usedSchemas: 24
-unusedSchemas: 63
+com.nokia.eda.components.v2.reboot:
+  - create:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots
+      method: POST
+  - read:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}
+      method: GET
+
+com.nokia.eda.components.v2.reboot_list:
+  - read:
+      path: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots
+      method: GET
+  - read:
+      path: /workflows/v1/components.eda.nokia.com/v2/reboots
+      method: GET
+
+totalPaths: 53
+totalSchemas: 96
+usedSchemas: 28
+unusedSchemas: 68
 unusedSchemaList:
   - AppGroupVersion
   - ErrorResponse
@@ -239,6 +265,8 @@ unusedSchemaList:
   - TopoValue
   - TopoValueExpression
   - Topology
+  - WorkflowIdentifier
+  - WorkflowInputDataElem
   - com.nokia.eda.components.v2.Chassis_alarms
   - com.nokia.eda.components.v2.Chassis_deviations
   - com.nokia.eda.components.v2.Chassis_metadata
@@ -264,3 +292,6 @@ unusedSchemaList:
   - com.nokia.eda.components.v2.PowerSupply_alarms
   - com.nokia.eda.components.v2.PowerSupply_deviations
   - com.nokia.eda.components.v2.PowerSupply_metadata
+  - com.nokia.eda.components.v2.Reboot_alarms
+  - com.nokia.eda.components.v2.Reboot_deviations
+  - com.nokia.eda.components.v2.Reboot_metadata

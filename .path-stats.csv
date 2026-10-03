@@ -49,3 +49,14 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/components.eda.nokia.com/v2/namespaces/{namespace}/powersupplies/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/components.eda.nokia.com/v2/namespaces/{namespace}/powersupplies/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/components.eda.nokia.com/v2/powersupplies,GET,com.nokia.eda.components.v2.PowerSupplyList,,false,false,false
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots,GET,com.nokia.eda.components.v2.RebootList,reboot_list,true,true,false
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots,POST,com.nokia.eda.components.v2.Reboot,reboot,true,false,true
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name},DELETE,,reboot,true,false,true
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name},GET,com.nokia.eda.components.v2.Reboot,reboot,true,true,true
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_artifacts,GET,,,false,false,false
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_artifacts/{artifact},GET,,,false,false,false
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_input,GET,WorkflowGetInputsRespElem,workflow_get_inputs_resp_elem,true,true,false
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_input,PUT,WorkflowInputData,,false,false,false
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_logs,GET,,,false,false,false
+/workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_terminate,PUT,,,false,false,false
+/workflows/v1/components.eda.nokia.com/v2/reboots,GET,com.nokia.eda.components.v2.RebootList,,false,false,false

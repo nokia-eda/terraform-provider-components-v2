@@ -108,7 +108,7 @@ func InterfaceModuleListDataSourceSchema(ctx context.Context) schema.Schema {
 									AttrTypes: SpecValue{}.AttributeTypes(ctx),
 								},
 							},
-							Optional:            true,
+							Computed:            true,
 							Description:         "InterfaceModuleSpec defines the desired state of InterfaceModule",
 							MarkdownDescription: "InterfaceModuleSpec defines the desired state of InterfaceModule",
 						},

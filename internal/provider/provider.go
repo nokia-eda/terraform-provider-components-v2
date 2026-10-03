@@ -278,12 +278,16 @@ func (p *componentsProvider) DataSources(ctx context.Context) []func() datasourc
 		NewMonitorListDataSource,
 		NewPowerSupplyDataSource,
 		NewPowerSupplyListDataSource,
+		NewRebootDataSource,
+		NewRebootListDataSource,
 		NewResourceListDataSource,
+		NewWorkflowGetInputsRespElemDataSource,
 	}
 }
 
 func (p *componentsProvider) Resources(ctx context.Context) []func() resource.Resource {
 	return []func() resource.Resource{
 		NewMonitorResource,
+		NewRebootResource,
 	}
 }

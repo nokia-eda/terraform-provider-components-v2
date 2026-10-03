@@ -191,7 +191,7 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "description": "ChassisSpec defines the desired state of Chassis"
                         }
                     },
@@ -459,7 +459,7 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "description": "ChassisSpec defines the desired state of Chassis"
                                         }
                                     },
@@ -711,26 +711,26 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "node",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "TopologyNode this Component resides on.\nIndicates the operation in which to apply the configuration"
                                     }
                                 },
                                 {
                                     "name": "slot",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Slot this Component resides in, unset for Components that do not have a slot or ID."
                                     }
                                 },
                                 {
                                     "name": "type",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Type of Component."
                                     }
                                 }
@@ -949,26 +949,26 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "node",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "TopologyNode this Component resides on.\nIndicates the operation in which to apply the configuration"
                                                     }
                                                 },
                                                 {
                                                     "name": "slot",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Slot this Component resides in, unset for Components that do not have a slot or ID."
                                                     }
                                                 },
                                                 {
                                                     "name": "type",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Type of Component."
                                                     }
                                                 }
@@ -1171,7 +1171,7 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "description": "ControlModuleSpec defines the desired state of ControlModule"
                         }
                     },
@@ -1493,7 +1493,7 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "description": "ControlModuleSpec defines the desired state of ControlModule"
                                         }
                                     },
@@ -1799,7 +1799,7 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "description": "FabricModuleSpec defines the desired state of FabricModule"
                         }
                     },
@@ -2114,7 +2114,7 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "description": "FabricModuleSpec defines the desired state of FabricModule"
                                         }
                                     },
@@ -2413,7 +2413,7 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "description": "FanSpec defines the desired state of Fan"
                         }
                     },
@@ -2677,7 +2677,7 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "description": "FanSpec defines the desired state of Fan"
                                         }
                                     },
@@ -2925,7 +2925,7 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "description": "InterfaceModuleSpec defines the desired state of InterfaceModule"
                         }
                     },
@@ -3240,7 +3240,7 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "description": "InterfaceModuleSpec defines the desired state of InterfaceModule"
                                         }
                                     },
@@ -3539,50 +3539,50 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "cpu",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "attributes": [
                                             {
                                                 "name": "enabled",
                                                 "bool": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "description": "Enable or disable CPU monitoring."
                                                 }
                                             },
                                             {
                                                 "name": "utilization",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "attributes": [
                                                         {
                                                             "name": "critical_threshold",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold."
                                                             }
                                                         },
                                                         {
                                                             "name": "falling_delta",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85."
                                                             }
                                                         },
                                                         {
                                                             "name": "major_threshold",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold."
                                                             }
                                                         },
                                                         {
                                                             "name": "minor_threshold",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a minor alarm."
                                                             }
                                                         }
@@ -3597,45 +3597,45 @@
                                 {
                                     "name": "memory",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "attributes": [
                                             {
                                                 "name": "enabled",
                                                 "bool": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "description": "Enable or disable memory monitoring."
                                                 }
                                             },
                                             {
                                                 "name": "utilization_1",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "attributes": [
                                                         {
                                                             "name": "critical_threshold",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold."
                                                             }
                                                         },
                                                         {
                                                             "name": "falling_delta",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85."
                                                             }
                                                         },
                                                         {
                                                             "name": "major_threshold",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold."
                                                             }
                                                         },
                                                         {
                                                             "name": "minor_threshold",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a minor alarm."
                                                             }
                                                         }
@@ -3650,7 +3650,7 @@
                                 {
                                     "name": "target_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3660,7 +3660,7 @@
                                 {
                                     "name": "targets",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3670,45 +3670,45 @@
                                 {
                                     "name": "volume",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "attributes": [
                                             {
                                                 "name": "enabled",
                                                 "bool": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "description": "Enable or disable volume monitoring."
                                                 }
                                             },
                                             {
                                                 "name": "utilization_2",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "attributes": [
                                                         {
                                                             "name": "critical_threshold",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold."
                                                             }
                                                         },
                                                         {
                                                             "name": "falling_delta",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85."
                                                             }
                                                         },
                                                         {
                                                             "name": "major_threshold",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold."
                                                             }
                                                         },
                                                         {
                                                             "name": "minor_threshold",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a minor alarm."
                                                             }
                                                         }
@@ -3896,50 +3896,50 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "cpu",
                                                     "single_nested": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "attributes": [
                                                             {
                                                                 "name": "enabled",
                                                                 "bool": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "description": "Enable or disable CPU monitoring."
                                                                 }
                                                             },
                                                             {
                                                                 "name": "utilization",
                                                                 "single_nested": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "attributes": [
                                                                         {
                                                                             "name": "critical_threshold",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "falling_delta",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "major_threshold",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "minor_threshold",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a minor alarm."
                                                                             }
                                                                         }
@@ -3954,45 +3954,45 @@
                                                 {
                                                     "name": "memory",
                                                     "single_nested": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "attributes": [
                                                             {
                                                                 "name": "enabled",
                                                                 "bool": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "description": "Enable or disable memory monitoring."
                                                                 }
                                                             },
                                                             {
                                                                 "name": "utilization_1",
                                                                 "single_nested": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "attributes": [
                                                                         {
                                                                             "name": "critical_threshold",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "falling_delta",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "major_threshold",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "minor_threshold",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a minor alarm."
                                                                             }
                                                                         }
@@ -4007,7 +4007,7 @@
                                                 {
                                                     "name": "target_selectors",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -4017,7 +4017,7 @@
                                                 {
                                                     "name": "targets",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -4027,45 +4027,45 @@
                                                 {
                                                     "name": "volume",
                                                     "single_nested": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "attributes": [
                                                             {
                                                                 "name": "enabled",
                                                                 "bool": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "description": "Enable or disable volume monitoring."
                                                                 }
                                                             },
                                                             {
                                                                 "name": "utilization_2",
                                                                 "single_nested": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "attributes": [
                                                                         {
                                                                             "name": "critical_threshold",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a critical alarm.\nThis value must be greater than the majorThreshold."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "falling_delta",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The delta in which a triggered threshold must drop below to clear an alarm.\nFor example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "major_threshold",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a major alarm.\nThis value must be greater than the minorThreshold."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "minor_threshold",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The minimum average utilization over the last 1 minute to trigger a minor alarm."
                                                                             }
                                                                         }
@@ -4237,7 +4237,7 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "description": "PowerSupplySpec defines the desired state of PowerSupply"
                         }
                     },
@@ -4552,7 +4552,7 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "description": "PowerSupplySpec defines the desired state of PowerSupply"
                                         }
                                     },
@@ -4728,6 +4728,819 @@
             }
         },
         {
+            "name": "reboot",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "name",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "name of the Reboot"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    },
+                    {
+                        "name": "alarms",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "critical",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "major",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "minor",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "warning",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "api_version",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    },
+                    {
+                        "name": "deviations",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "count",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "kind",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    },
+                    {
+                        "name": "metadata",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "annotations",
+                                    "map": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "labels",
+                                    "map": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "name",
+                                    "string": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "namespace",
+                                    "string": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "spec",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "drains",
+                                    "single_nested": {
+                                        "computed_optional_required": "computed",
+                                        "attributes": [
+                                            {
+                                                "name": "skip",
+                                                "bool": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Do not run any drain operations. Nodes will be rebooted without attempting to gracefully drain them."
+                                                }
+                                            },
+                                            {
+                                                "name": "wait_seconds",
+                                                "int64": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Seconds to wait before rebooting a node after the drain has been initiated.\nThis is used to allow time for any traffic to drain away from the node before reboot."
+                                                }
+                                            }
+                                        ],
+                                        "description": "Configure drains to gracefully drain traffic away from nodes before rebooting."
+                                    }
+                                },
+                                {
+                                    "name": "node_selectors",
+                                    "list": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "List of node selectors to select nodes to reboot.\nThis matches labels on TopoNode resources, including those TopoNodes in the list of nodes that will be rebooted.\nIf no nodes are specified, and no node selectors are specified, all nodes in the given namespace will be selected.\nThis is a list of label expressions, e.g. [\"eda.nokia.com/role=leaf\"]."
+                                    }
+                                },
+                                {
+                                    "name": "nodes",
+                                    "list": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "List of nodes to reboot."
+                                    }
+                                },
+                                {
+                                    "name": "options",
+                                    "single_nested": {
+                                        "computed_optional_required": "computed",
+                                        "attributes": [
+                                            {
+                                                "name": "component_recovery_timeout_seconds",
+                                                "int64": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Seconds to wait for ControlModule and InterfaceModule recovery after ReconnectionTimeout.\nMinimum value is 60 seconds (1 minute), maximum value is 3600 seconds (1 hour).\nThe default value is 900 seconds (15 minutes)."
+                                                }
+                                            },
+                                            {
+                                                "name": "delay_seconds",
+                                                "int64": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Delay in seconds before performing the reboot.\nMinimum value is 0 seconds (immediate), maximum value is 300 seconds (5 minutes)."
+                                                }
+                                            },
+                                            {
+                                                "name": "force",
+                                                "bool": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Force the reboot, bypassing any softchecks on the node.\nFor example: unsaved configuration between running and startup config."
+                                                }
+                                            },
+                                            {
+                                                "name": "ignore_interface_module_recover",
+                                                "bool": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Do not require InterfaceModules to transition to Up After Reboot."
+                                                }
+                                            },
+                                            {
+                                                "name": "message",
+                                                "string": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Supply a broadcast message to all users logged in to the node(s) being rebooted."
+                                                }
+                                            },
+                                            {
+                                                "name": "reboot_method",
+                                                "string": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Reboot method to use, currently only cold reboot is supported, other methods may be added in the future."
+                                                }
+                                            },
+                                            {
+                                                "name": "reconnection_timeout_seconds",
+                                                "int64": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Seconds to wait for node to come back online after reboot.\nMinimum value is 60 seconds (1 minute), maximum value is 3600 seconds (1 hour).\nThe default value is 600 seconds (10 minutes).\nSR OS nodes in NPP maintenance mode use 1800 seconds when unset or set to default value of 600 seconds."
+                                                }
+                                            }
+                                        ],
+                                        "description": "Reboot Options to configure how the reboot is performed."
+                                    }
+                                },
+                                {
+                                    "name": "prompts",
+                                    "single_nested": {
+                                        "computed_optional_required": "computed",
+                                        "attributes": [
+                                            {
+                                                "name": "prompts",
+                                                "list": {
+                                                    "computed_optional_required": "computed",
+                                                    "element_type": {
+                                                        "string": {}
+                                                    },
+                                                    "description": "Prompts the user to confirm wether to proceed with the reboot or wait for nodes to recover.\nInputSafety prompts the user for confirmation to proceed if any unintended input is detected.\nRecoveryTimeout prompts the user for confirmation, to wait for an additional ReconnectionTimeoutSeconds duration, allowing time for the node to recover."
+                                                }
+                                            },
+                                            {
+                                                "name": "skip",
+                                                "bool": {
+                                                    "computed_optional_required": "computed",
+                                                    "description": "Skip all user prompts and execute without any user interaction."
+                                                }
+                                            }
+                                        ],
+                                        "description": "Control when to prompt the user for input.\nIf any pre or post checks fail, the user will be prompted for input, but this may be used to prompt even if they're successful."
+                                    }
+                                },
+                                {
+                                    "name": "tranches",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "name",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Name of the tranche.\nThis is used to identify the tranche in the UI and in logs."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "node_selectors",
+                                                    "list": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        },
+                                                        "description": "Node Selectors is a list of node selectors to select nodes to reboot in this tranche.\nThis matches labels on TopoNode resources, including those TopoNodes in the list of nodes that will be rebooted.\nThis is a list of label expressions, e.g. [\"eda.nokia.com/role=leaf\"]."
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "description": "List of tranches to use to reboot nodes.\nA tranche is a list of node selectors, and a name.\nTranches are rebooted in order, sequentially.\nTranches are rebooted before any Nodes and/or Node Selectors are evaluated. When there is overlap between a Tranche and the list of Nodes evaluated by Nodes and/or Node Selectors, the matching Node will be purged from the list of Nodes / NodeSelectors."
+                                    }
+                                }
+                            ],
+                            "description": "RebootSpec defines the desired state of Reboot"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "details",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "drain_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The time when the node was drained.\nThis is the time when the node was drained before the imaging operation."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "error",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Error message if the operation was unsuccessful for this node."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "node_name",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The name of the node this result is for."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "reboot_recovery_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The time when the node was recovered after reboot.\nThis is the time when the node was recovered after the reboot operation."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "reboot_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The time when the node was rebooted.\nThis is the time when the node was rebooted during the reboot operation."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "success",
+                                                    "bool": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Indicates if the reboot operation was successful for this node.\nThis is true if the reboot operation was successful, false if it failed."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "undrain_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The time when the node was undrained.\nThis is the time when the node was undrained after the imaging operation."
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "description": "Per-node reboot details."
+                                    }
+                                },
+                                {
+                                    "name": "first_node_drained_time",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The time when the first node was drained."
+                                    }
+                                },
+                                {
+                                    "name": "first_node_rebooted_time",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The time when the first node was rebooted."
+                                    }
+                                },
+                                {
+                                    "name": "last_node_reboot_recovered_time",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The time when the last node recovered post reboot."
+                                    }
+                                },
+                                {
+                                    "name": "last_node_undrained_time",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The time when the last node was undrained."
+                                    }
+                                },
+                                {
+                                    "name": "result",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Result is the overall result of the reboot operation.\nIt can be one of the following values:\n- \"Success\": All reboots were successfully performed.\n- \"Failed\": No reboots were successfully performed.\n- \"PartialSuccess\": Some reboots were successfully performed, but not all."
+                                    }
+                                }
+                            ],
+                            "description": "RebootStatus defines the observed state of Reboot"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "reboot_list",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "fields",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "a comma-separated list of resource fields to fetch/return.  If unspecified, all fields are fetched.  If empty, only key-fields are fetched."
+                        }
+                    },
+                    {
+                        "name": "filter",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "an EQL \"where\" expression that will be used to filter the set of resources returned."
+                        }
+                    },
+                    {
+                        "name": "label_selector",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "A label selector string to filter the results based on resource labels. If specified multiple times, the union of resources which satisfy a label-selector will be returned."
+                        }
+                    },
+                    {
+                        "name": "labelselector",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "Deprecated: a label selector string to filter the results based on CR labels"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    },
+                    {
+                        "name": "api_version",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    },
+                    {
+                        "name": "items",
+                        "list_nested": {
+                            "computed_optional_required": "computed",
+                            "nested_object": {
+                                "attributes": [
+                                    {
+                                        "name": "alarms",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "critical",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "major",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "minor",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "warning",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "api_version",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "deviations",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "count",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "kind",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "metadata",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "annotations",
+                                                    "map": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "labels",
+                                                    "map": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "name",
+                                                    "string": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "namespace",
+                                                    "string": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "spec",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "drains",
+                                                    "single_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "attributes": [
+                                                            {
+                                                                "name": "skip",
+                                                                "bool": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Do not run any drain operations. Nodes will be rebooted without attempting to gracefully drain them."
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "wait_seconds",
+                                                                "int64": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Seconds to wait before rebooting a node after the drain has been initiated.\nThis is used to allow time for any traffic to drain away from the node before reboot."
+                                                                }
+                                                            }
+                                                        ],
+                                                        "description": "Configure drains to gracefully drain traffic away from nodes before rebooting."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "node_selectors",
+                                                    "list": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        },
+                                                        "description": "List of node selectors to select nodes to reboot.\nThis matches labels on TopoNode resources, including those TopoNodes in the list of nodes that will be rebooted.\nIf no nodes are specified, and no node selectors are specified, all nodes in the given namespace will be selected.\nThis is a list of label expressions, e.g. [\"eda.nokia.com/role=leaf\"]."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "nodes",
+                                                    "list": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        },
+                                                        "description": "List of nodes to reboot."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "options",
+                                                    "single_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "attributes": [
+                                                            {
+                                                                "name": "component_recovery_timeout_seconds",
+                                                                "int64": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Seconds to wait for ControlModule and InterfaceModule recovery after ReconnectionTimeout.\nMinimum value is 60 seconds (1 minute), maximum value is 3600 seconds (1 hour).\nThe default value is 900 seconds (15 minutes)."
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "delay_seconds",
+                                                                "int64": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Delay in seconds before performing the reboot.\nMinimum value is 0 seconds (immediate), maximum value is 300 seconds (5 minutes)."
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "force",
+                                                                "bool": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Force the reboot, bypassing any softchecks on the node.\nFor example: unsaved configuration between running and startup config."
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "ignore_interface_module_recover",
+                                                                "bool": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Do not require InterfaceModules to transition to Up After Reboot."
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "message",
+                                                                "string": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Supply a broadcast message to all users logged in to the node(s) being rebooted."
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "reboot_method",
+                                                                "string": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Reboot method to use, currently only cold reboot is supported, other methods may be added in the future."
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "reconnection_timeout_seconds",
+                                                                "int64": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Seconds to wait for node to come back online after reboot.\nMinimum value is 60 seconds (1 minute), maximum value is 3600 seconds (1 hour).\nThe default value is 600 seconds (10 minutes).\nSR OS nodes in NPP maintenance mode use 1800 seconds when unset or set to default value of 600 seconds."
+                                                                }
+                                                            }
+                                                        ],
+                                                        "description": "Reboot Options to configure how the reboot is performed."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "prompts",
+                                                    "single_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "attributes": [
+                                                            {
+                                                                "name": "prompts",
+                                                                "list": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "element_type": {
+                                                                        "string": {}
+                                                                    },
+                                                                    "description": "Prompts the user to confirm wether to proceed with the reboot or wait for nodes to recover.\nInputSafety prompts the user for confirmation to proceed if any unintended input is detected.\nRecoveryTimeout prompts the user for confirmation, to wait for an additional ReconnectionTimeoutSeconds duration, allowing time for the node to recover."
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "skip",
+                                                                "bool": {
+                                                                    "computed_optional_required": "computed",
+                                                                    "description": "Skip all user prompts and execute without any user interaction."
+                                                                }
+                                                            }
+                                                        ],
+                                                        "description": "Control when to prompt the user for input.\nIf any pre or post checks fail, the user will be prompted for input, but this may be used to prompt even if they're successful."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "tranches",
+                                                    "list_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "nested_object": {
+                                                            "attributes": [
+                                                                {
+                                                                    "name": "name",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "Name of the tranche.\nThis is used to identify the tranche in the UI and in logs."
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "node_selectors",
+                                                                    "list": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "element_type": {
+                                                                            "string": {}
+                                                                        },
+                                                                        "description": "Node Selectors is a list of node selectors to select nodes to reboot in this tranche.\nThis matches labels on TopoNode resources, including those TopoNodes in the list of nodes that will be rebooted.\nThis is a list of label expressions, e.g. [\"eda.nokia.com/role=leaf\"]."
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "description": "List of tranches to use to reboot nodes.\nA tranche is a list of node selectors, and a name.\nTranches are rebooted in order, sequentially.\nTranches are rebooted before any Nodes and/or Node Selectors are evaluated. When there is overlap between a Tranche and the list of Nodes evaluated by Nodes and/or Node Selectors, the matching Node will be purged from the list of Nodes / NodeSelectors."
+                                                    }
+                                                }
+                                            ],
+                                            "description": "RebootSpec defines the desired state of Reboot"
+                                        }
+                                    },
+                                    {
+                                        "name": "status",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "details",
+                                                    "list_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "nested_object": {
+                                                            "attributes": [
+                                                                {
+                                                                    "name": "drain_time",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "The time when the node was drained.\nThis is the time when the node was drained before the imaging operation."
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "error",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "Error message if the operation was unsuccessful for this node."
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "node_name",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "The name of the node this result is for."
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "reboot_recovery_time",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "The time when the node was recovered after reboot.\nThis is the time when the node was recovered after the reboot operation."
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "reboot_time",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "The time when the node was rebooted.\nThis is the time when the node was rebooted during the reboot operation."
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "success",
+                                                                    "bool": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "Indicates if the reboot operation was successful for this node.\nThis is true if the reboot operation was successful, false if it failed."
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "undrain_time",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "The time when the node was undrained.\nThis is the time when the node was undrained after the imaging operation."
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "description": "Per-node reboot details."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "first_node_drained_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The time when the first node was drained."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "first_node_rebooted_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The time when the first node was rebooted."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "last_node_reboot_recovered_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The time when the last node recovered post reboot."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "last_node_undrained_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The time when the last node was undrained."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "result",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Result is the overall result of the reboot operation.\nIt can be one of the following values:\n- \"Success\": All reboots were successfully performed.\n- \"Failed\": No reboots were successfully performed.\n- \"PartialSuccess\": Some reboots were successfully performed, but not all."
+                                                    }
+                                                }
+                                            ],
+                                            "description": "RebootStatus defines the observed state of Reboot"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "kind",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    }
+                ]
+            }
+        },
+        {
             "name": "resource_list",
             "schema": {
                 "attributes": [
@@ -4787,6 +5600,79 @@
                                     },
                                     {
                                         "name": "ui_category",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "workflow_get_inputs_resp_elem",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "name",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "name of the Reboot"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    },
+                    {
+                        "name": "workflow_get_inputs_resp_elem",
+                        "set_nested": {
+                            "computed_optional_required": "computed",
+                            "nested_object": {
+                                "attributes": [
+                                    {
+                                        "name": "ack_prompt",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "group",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "kind",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "name",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "namespace",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "schema_prompt",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "version",
                                         "string": {
                                             "computed_optional_required": "computed"
                                         }
@@ -4972,7 +5858,7 @@
                                 {
                                     "name": "cpu",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "attributes": [
                                             {
                                                 "name": "enabled",
@@ -4987,7 +5873,7 @@
                                             {
                                                 "name": "utilization",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed_optional",
                                                     "attributes": [
                                                         {
                                                             "name": "critical_threshold",
@@ -5088,7 +5974,7 @@
                                 {
                                     "name": "memory",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "attributes": [
                                             {
                                                 "name": "enabled",
@@ -5103,7 +5989,7 @@
                                             {
                                                 "name": "utilization_1",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed_optional",
                                                     "attributes": [
                                                         {
                                                             "name": "critical_threshold",
@@ -5204,7 +6090,7 @@
                                 {
                                     "name": "target_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -5214,7 +6100,7 @@
                                 {
                                     "name": "targets",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -5224,7 +6110,7 @@
                                 {
                                     "name": "volume",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "attributes": [
                                             {
                                                 "name": "enabled",
@@ -5239,7 +6125,7 @@
                                             {
                                                 "name": "utilization_2",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed_optional",
                                                     "attributes": [
                                                         {
                                                             "name": "critical_threshold",
@@ -5365,6 +6251,551 @@
                         "string": {
                             "computed_optional_required": "computed_optional",
                             "description": "name of the Monitor"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "reboot",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "alarms",
+                        "single_nested": {
+                            "computed_optional_required": "computed_optional",
+                            "attributes": [
+                                {
+                                    "name": "critical",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                },
+                                {
+                                    "name": "major",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                },
+                                {
+                                    "name": "minor",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                },
+                                {
+                                    "name": "warning",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "api_version",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "default": {
+                                "static": "components.eda.nokia.com/v2"
+                            },
+                            "validators": [
+                                {
+                                    "custom": {
+                                        "imports": [
+                                            {
+                                                "path": "regexp"
+                                            },
+                                            {
+                                                "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                            }
+                                        ],
+                                        "schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^components\\\\.eda\\\\.nokia\\\\.com/v2$\"), \"\")"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "deviations",
+                        "single_nested": {
+                            "computed_optional_required": "computed_optional",
+                            "attributes": [
+                                {
+                                    "name": "count",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "kind",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "default": {
+                                "static": "Reboot"
+                            },
+                            "validators": [
+                                {
+                                    "custom": {
+                                        "imports": [
+                                            {
+                                                "path": "regexp"
+                                            },
+                                            {
+                                                "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                            }
+                                        ],
+                                        "schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^Reboot$\"), \"\")"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "metadata",
+                        "single_nested": {
+                            "computed_optional_required": "required",
+                            "attributes": [
+                                {
+                                    "name": "annotations",
+                                    "map": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "labels",
+                                    "map": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "name",
+                                    "string": {
+                                        "computed_optional_required": "required",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.LengthAtMost(253)"
+                                                }
+                                            },
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "regexp"
+                                                        },
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*$\"), \"\")"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "namespace",
+                                    "string": {
+                                        "computed_optional_required": "required"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "spec",
+                        "single_nested": {
+                            "computed_optional_required": "required",
+                            "attributes": [
+                                {
+                                    "name": "drains",
+                                    "single_nested": {
+                                        "computed_optional_required": "computed_optional",
+                                        "attributes": [
+                                            {
+                                                "name": "skip",
+                                                "bool": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "default": {
+                                                        "static": false
+                                                    },
+                                                    "description": "Do not run any drain operations. Nodes will be rebooted without attempting to gracefully drain them."
+                                                }
+                                            },
+                                            {
+                                                "name": "wait_seconds",
+                                                "int64": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "default": {
+                                                        "static": 60
+                                                    },
+                                                    "description": "Seconds to wait before rebooting a node after the drain has been initiated.\nThis is used to allow time for any traffic to drain away from the node before reboot.",
+                                                    "validators": [
+                                                        {
+                                                            "custom": {
+                                                                "imports": [
+                                                                    {
+                                                                        "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                                    }
+                                                                ],
+                                                                "schema_definition": "int64validator.Between(0, 300)"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ],
+                                        "description": "Configure drains to gracefully drain traffic away from nodes before rebooting."
+                                    }
+                                },
+                                {
+                                    "name": "node_selectors",
+                                    "list": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "List of node selectors to select nodes to reboot.\nThis matches labels on TopoNode resources, including those TopoNodes in the list of nodes that will be rebooted.\nIf no nodes are specified, and no node selectors are specified, all nodes in the given namespace will be selected.\nThis is a list of label expressions, e.g. [\"eda.nokia.com/role=leaf\"]."
+                                    }
+                                },
+                                {
+                                    "name": "nodes",
+                                    "list": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "List of nodes to reboot."
+                                    }
+                                },
+                                {
+                                    "name": "options",
+                                    "single_nested": {
+                                        "computed_optional_required": "computed_optional",
+                                        "attributes": [
+                                            {
+                                                "name": "component_recovery_timeout_seconds",
+                                                "int64": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "default": {
+                                                        "static": 900
+                                                    },
+                                                    "description": "Seconds to wait for ControlModule and InterfaceModule recovery after ReconnectionTimeout.\nMinimum value is 60 seconds (1 minute), maximum value is 3600 seconds (1 hour).\nThe default value is 900 seconds (15 minutes).",
+                                                    "validators": [
+                                                        {
+                                                            "custom": {
+                                                                "imports": [
+                                                                    {
+                                                                        "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                                    }
+                                                                ],
+                                                                "schema_definition": "int64validator.Between(60, 3600)"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "name": "delay_seconds",
+                                                "int64": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "description": "Delay in seconds before performing the reboot.\nMinimum value is 0 seconds (immediate), maximum value is 300 seconds (5 minutes).",
+                                                    "validators": [
+                                                        {
+                                                            "custom": {
+                                                                "imports": [
+                                                                    {
+                                                                        "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                                    }
+                                                                ],
+                                                                "schema_definition": "int64validator.Between(0, 300)"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "name": "force",
+                                                "bool": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "default": {
+                                                        "static": false
+                                                    },
+                                                    "description": "Force the reboot, bypassing any softchecks on the node.\nFor example: unsaved configuration between running and startup config."
+                                                }
+                                            },
+                                            {
+                                                "name": "ignore_interface_module_recover",
+                                                "bool": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "default": {
+                                                        "static": false
+                                                    },
+                                                    "description": "Do not require InterfaceModules to transition to Up After Reboot."
+                                                }
+                                            },
+                                            {
+                                                "name": "message",
+                                                "string": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "description": "Supply a broadcast message to all users logged in to the node(s) being rebooted."
+                                                }
+                                            },
+                                            {
+                                                "name": "reboot_method",
+                                                "string": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "default": {
+                                                        "static": "Cold"
+                                                    },
+                                                    "description": "Reboot method to use, currently only cold reboot is supported, other methods may be added in the future.",
+                                                    "validators": [
+                                                        {
+                                                            "custom": {
+                                                                "imports": [
+                                                                    {
+                                                                        "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                                    }
+                                                                ],
+                                                                "schema_definition": "stringvalidator.OneOf(\n\"Cold\",\n)"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "name": "reconnection_timeout_seconds",
+                                                "int64": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "default": {
+                                                        "static": 600
+                                                    },
+                                                    "description": "Seconds to wait for node to come back online after reboot.\nMinimum value is 60 seconds (1 minute), maximum value is 3600 seconds (1 hour).\nThe default value is 600 seconds (10 minutes).\nSR OS nodes in NPP maintenance mode use 1800 seconds when unset or set to default value of 600 seconds.",
+                                                    "validators": [
+                                                        {
+                                                            "custom": {
+                                                                "imports": [
+                                                                    {
+                                                                        "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                                    }
+                                                                ],
+                                                                "schema_definition": "int64validator.Between(60, 3600)"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ],
+                                        "description": "Reboot Options to configure how the reboot is performed."
+                                    }
+                                },
+                                {
+                                    "name": "prompts",
+                                    "single_nested": {
+                                        "computed_optional_required": "computed_optional",
+                                        "attributes": [
+                                            {
+                                                "name": "prompts",
+                                                "list": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "element_type": {
+                                                        "string": {}
+                                                    },
+                                                    "description": "Prompts the user to confirm wether to proceed with the reboot or wait for nodes to recover.\nInputSafety prompts the user for confirmation to proceed if any unintended input is detected.\nRecoveryTimeout prompts the user for confirmation, to wait for an additional ReconnectionTimeoutSeconds duration, allowing time for the node to recover."
+                                                }
+                                            },
+                                            {
+                                                "name": "skip",
+                                                "bool": {
+                                                    "computed_optional_required": "computed_optional",
+                                                    "default": {
+                                                        "static": false
+                                                    },
+                                                    "description": "Skip all user prompts and execute without any user interaction."
+                                                }
+                                            }
+                                        ],
+                                        "description": "Control when to prompt the user for input.\nIf any pre or post checks fail, the user will be prompted for input, but this may be used to prompt even if they're successful."
+                                    }
+                                },
+                                {
+                                    "name": "tranches",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed_optional",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "name",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "description": "Name of the tranche.\nThis is used to identify the tranche in the UI and in logs."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "node_selectors",
+                                                    "list": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        },
+                                                        "description": "Node Selectors is a list of node selectors to select nodes to reboot in this tranche.\nThis matches labels on TopoNode resources, including those TopoNodes in the list of nodes that will be rebooted.\nThis is a list of label expressions, e.g. [\"eda.nokia.com/role=leaf\"]."
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "description": "List of tranches to use to reboot nodes.\nA tranche is a list of node selectors, and a name.\nTranches are rebooted in order, sequentially.\nTranches are rebooted before any Nodes and/or Node Selectors are evaluated. When there is overlap between a Tranche and the list of Nodes evaluated by Nodes and/or Node Selectors, the matching Node will be purged from the list of Nodes / NodeSelectors."
+                                    }
+                                }
+                            ],
+                            "description": "RebootSpec defines the desired state of Reboot"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "single_nested": {
+                            "computed_optional_required": "computed_optional",
+                            "attributes": [
+                                {
+                                    "name": "details",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed_optional",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "drain_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "description": "The time when the node was drained.\nThis is the time when the node was drained before the imaging operation."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "error",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "description": "Error message if the operation was unsuccessful for this node."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "node_name",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "description": "The name of the node this result is for."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "reboot_recovery_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "description": "The time when the node was recovered after reboot.\nThis is the time when the node was recovered after the reboot operation."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "reboot_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "description": "The time when the node was rebooted.\nThis is the time when the node was rebooted during the reboot operation."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "success",
+                                                    "bool": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "default": {
+                                                            "static": false
+                                                        },
+                                                        "description": "Indicates if the reboot operation was successful for this node.\nThis is true if the reboot operation was successful, false if it failed."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "undrain_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "description": "The time when the node was undrained.\nThis is the time when the node was undrained after the imaging operation."
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "description": "Per-node reboot details."
+                                    }
+                                },
+                                {
+                                    "name": "first_node_drained_time",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "The time when the first node was drained."
+                                    }
+                                },
+                                {
+                                    "name": "first_node_rebooted_time",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "The time when the first node was rebooted."
+                                    }
+                                },
+                                {
+                                    "name": "last_node_reboot_recovered_time",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "The time when the last node recovered post reboot."
+                                    }
+                                },
+                                {
+                                    "name": "last_node_undrained_time",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "The time when the last node was undrained."
+                                    }
+                                },
+                                {
+                                    "name": "result",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "Result is the overall result of the reboot operation.\nIt can be one of the following values:\n- \"Success\": All reboots were successfully performed.\n- \"Failed\": No reboots were successfully performed.\n- \"PartialSuccess\": Some reboots were successfully performed, but not all.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"Success\",\n\"Failed\",\n\"PartialSuccess\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "description": "RebootStatus defines the observed state of Reboot"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "name of the Reboot"
                         }
                     },
                     {

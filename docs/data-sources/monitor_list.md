@@ -35,10 +35,6 @@ description: |-
 <a id="nestedatt--items"></a>
 ### Nested Schema for `items`
 
-Optional:
-
-- `spec` (Attributes) MonitorSpec defines the desired state of Monitor (see [below for nested schema](#nestedatt--items--spec))
-
 Read-Only:
 
 - `alarms` (Attributes) (see [below for nested schema](#nestedatt--items--alarms))
@@ -46,88 +42,8 @@ Read-Only:
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--items--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--items--metadata))
+- `spec` (Attributes) MonitorSpec defines the desired state of Monitor (see [below for nested schema](#nestedatt--items--spec))
 - `status` (Attributes) MonitorStatus defines the observed state of Monitor (see [below for nested schema](#nestedatt--items--status))
-
-<a id="nestedatt--items--spec"></a>
-### Nested Schema for `items.spec`
-
-Optional:
-
-- `cpu` (Attributes) CPU monitoring for targets matching this Monitor. (see [below for nested schema](#nestedatt--items--spec--cpu))
-- `memory` (Attributes) Memory monitoring for targets matching this Monitor. (see [below for nested schema](#nestedatt--items--spec--memory))
-- `target_selectors` (List of String) Selector to use when including targets to monitor.
-- `targets` (List of String) References to targets to monitor.
-- `volume` (Attributes) Volume monitoring for targets matching this Monitor. (see [below for nested schema](#nestedatt--items--spec--volume))
-
-<a id="nestedatt--items--spec--cpu"></a>
-### Nested Schema for `items.spec.cpu`
-
-Optional:
-
-- `enabled` (Boolean) Enable or disable CPU monitoring.
-- `utilization` (Attributes) Parameters relating to CPU utilization monitoring. (see [below for nested schema](#nestedatt--items--spec--cpu--utilization))
-
-<a id="nestedatt--items--spec--cpu--utilization"></a>
-### Nested Schema for `items.spec.cpu.utilization`
-
-Optional:
-
-- `critical_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a critical alarm.
-This value must be greater than the majorThreshold.
-- `falling_delta` (Number) The delta in which a triggered threshold must drop below to clear an alarm.
-For example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.
-- `major_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a major alarm.
-This value must be greater than the minorThreshold.
-- `minor_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a minor alarm.
-
-
-
-<a id="nestedatt--items--spec--memory"></a>
-### Nested Schema for `items.spec.memory`
-
-Optional:
-
-- `enabled` (Boolean) Enable or disable memory monitoring.
-- `utilization` (Attributes) Parameters relating to memory utilization monitoring. (see [below for nested schema](#nestedatt--items--spec--memory--utilization))
-
-<a id="nestedatt--items--spec--memory--utilization"></a>
-### Nested Schema for `items.spec.memory.utilization`
-
-Optional:
-
-- `critical_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a critical alarm.
-This value must be greater than the majorThreshold.
-- `falling_delta` (Number) The delta in which a triggered threshold must drop below to clear an alarm.
-For example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.
-- `major_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a major alarm.
-This value must be greater than the minorThreshold.
-- `minor_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a minor alarm.
-
-
-
-<a id="nestedatt--items--spec--volume"></a>
-### Nested Schema for `items.spec.volume`
-
-Optional:
-
-- `enabled` (Boolean) Enable or disable volume monitoring.
-- `utilization` (Attributes) Parameters relating to volume utilization monitoring. (see [below for nested schema](#nestedatt--items--spec--volume--utilization))
-
-<a id="nestedatt--items--spec--volume--utilization"></a>
-### Nested Schema for `items.spec.volume.utilization`
-
-Optional:
-
-- `critical_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a critical alarm.
-This value must be greater than the majorThreshold.
-- `falling_delta` (Number) The delta in which a triggered threshold must drop below to clear an alarm.
-For example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.
-- `major_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a major alarm.
-This value must be greater than the minorThreshold.
-- `minor_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a minor alarm.
-
-
-
 
 <a id="nestedatt--items--alarms"></a>
 ### Nested Schema for `items.alarms`
@@ -157,6 +73,87 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--items--spec"></a>
+### Nested Schema for `items.spec`
+
+Read-Only:
+
+- `cpu` (Attributes) CPU monitoring for targets matching this Monitor. (see [below for nested schema](#nestedatt--items--spec--cpu))
+- `memory` (Attributes) Memory monitoring for targets matching this Monitor. (see [below for nested schema](#nestedatt--items--spec--memory))
+- `target_selectors` (List of String) Selector to use when including targets to monitor.
+- `targets` (List of String) References to targets to monitor.
+- `volume` (Attributes) Volume monitoring for targets matching this Monitor. (see [below for nested schema](#nestedatt--items--spec--volume))
+
+<a id="nestedatt--items--spec--cpu"></a>
+### Nested Schema for `items.spec.cpu`
+
+Read-Only:
+
+- `enabled` (Boolean) Enable or disable CPU monitoring.
+- `utilization` (Attributes) Parameters relating to CPU utilization monitoring. (see [below for nested schema](#nestedatt--items--spec--cpu--utilization))
+
+<a id="nestedatt--items--spec--cpu--utilization"></a>
+### Nested Schema for `items.spec.cpu.utilization`
+
+Read-Only:
+
+- `critical_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a critical alarm.
+This value must be greater than the majorThreshold.
+- `falling_delta` (Number) The delta in which a triggered threshold must drop below to clear an alarm.
+For example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.
+- `major_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a major alarm.
+This value must be greater than the minorThreshold.
+- `minor_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a minor alarm.
+
+
+
+<a id="nestedatt--items--spec--memory"></a>
+### Nested Schema for `items.spec.memory`
+
+Read-Only:
+
+- `enabled` (Boolean) Enable or disable memory monitoring.
+- `utilization` (Attributes) Parameters relating to memory utilization monitoring. (see [below for nested schema](#nestedatt--items--spec--memory--utilization))
+
+<a id="nestedatt--items--spec--memory--utilization"></a>
+### Nested Schema for `items.spec.memory.utilization`
+
+Read-Only:
+
+- `critical_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a critical alarm.
+This value must be greater than the majorThreshold.
+- `falling_delta` (Number) The delta in which a triggered threshold must drop below to clear an alarm.
+For example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.
+- `major_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a major alarm.
+This value must be greater than the minorThreshold.
+- `minor_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a minor alarm.
+
+
+
+<a id="nestedatt--items--spec--volume"></a>
+### Nested Schema for `items.spec.volume`
+
+Read-Only:
+
+- `enabled` (Boolean) Enable or disable volume monitoring.
+- `utilization` (Attributes) Parameters relating to volume utilization monitoring. (see [below for nested schema](#nestedatt--items--spec--volume--utilization))
+
+<a id="nestedatt--items--spec--volume--utilization"></a>
+### Nested Schema for `items.spec.volume.utilization`
+
+Read-Only:
+
+- `critical_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a critical alarm.
+This value must be greater than the majorThreshold.
+- `falling_delta` (Number) The delta in which a triggered threshold must drop below to clear an alarm.
+For example, with a criticalThreshold of 90 and a fallingDelta of 5, the critical alarm will clear when the utilization drops below 85.
+- `major_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a major alarm.
+This value must be greater than the minorThreshold.
+- `minor_threshold` (Number) The minimum average utilization over the last 1 minute to trigger a minor alarm.
+
+
 
 
 <a id="nestedatt--items--status"></a>

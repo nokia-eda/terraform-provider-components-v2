@@ -106,7 +106,7 @@ func ControlModuleDataSourceSchema(ctx context.Context) schema.Schema {
 						AttrTypes: SpecValue{}.AttributeTypes(ctx),
 					},
 				},
-				Optional:            true,
+				Computed:            true,
 				Description:         "ControlModuleSpec defines the desired state of ControlModule",
 				MarkdownDescription: "ControlModuleSpec defines the desired state of ControlModule",
 			},

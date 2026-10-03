@@ -53,11 +53,23 @@ datasources:
   - model_name: power_supply
     oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/powersupplies/{name}
     oas_schema: com.nokia.eda.components.v2.PowerSupply
+  - model_name: reboot_list
+    oas_endpoint: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots
+    oas_schema: com.nokia.eda.components.v2.RebootList
+  - model_name: reboot
+    oas_endpoint: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}
+    oas_schema: com.nokia.eda.components.v2.Reboot
+  - model_name: workflow_get_inputs_resp_elem
+    oas_endpoint: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots/{name}/_input
+    oas_schema: WorkflowGetInputsRespElem
 
 resources:
   - model_name: monitor
     oas_endpoint: /apps/components.eda.nokia.com/v2/namespaces/{namespace}/monitors
     oas_schema: com.nokia.eda.components.v2.Monitor
+  - model_name: reboot
+    oas_endpoint: /workflows/v1/components.eda.nokia.com/v2/namespaces/{namespace}/reboots
+    oas_schema: com.nokia.eda.components.v2.Reboot
 
 qualified:
   datasources:

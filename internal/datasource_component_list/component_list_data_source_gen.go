@@ -104,17 +104,17 @@ func ComponentListDataSourceSchema(ctx context.Context) schema.Schema {
 						"spec": schema.SingleNestedAttribute{
 							Attributes: map[string]schema.Attribute{
 								"node": schema.StringAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "TopologyNode this Component resides on.\nIndicates the operation in which to apply the configuration",
 									MarkdownDescription: "TopologyNode this Component resides on.\nIndicates the operation in which to apply the configuration",
 								},
 								"slot": schema.StringAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Slot this Component resides in, unset for Components that do not have a slot or ID.",
 									MarkdownDescription: "Slot this Component resides in, unset for Components that do not have a slot or ID.",
 								},
 								"type": schema.StringAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Type of Component.",
 									MarkdownDescription: "Type of Component.",
 								},
@@ -124,7 +124,7 @@ func ComponentListDataSourceSchema(ctx context.Context) schema.Schema {
 									AttrTypes: SpecValue{}.AttributeTypes(ctx),
 								},
 							},
-							Optional:            true,
+							Computed:            true,
 							Description:         "ComponentSpec defines the desired state of Component",
 							MarkdownDescription: "ComponentSpec defines the desired state of Component",
 						},

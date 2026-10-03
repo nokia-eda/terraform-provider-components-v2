@@ -108,7 +108,7 @@ func FabricModuleListDataSourceSchema(ctx context.Context) schema.Schema {
 									AttrTypes: SpecValue{}.AttributeTypes(ctx),
 								},
 							},
-							Optional:            true,
+							Computed:            true,
 							Description:         "FabricModuleSpec defines the desired state of FabricModule",
 							MarkdownDescription: "FabricModuleSpec defines the desired state of FabricModule",
 						},

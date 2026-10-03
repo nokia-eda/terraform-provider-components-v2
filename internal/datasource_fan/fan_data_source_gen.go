@@ -106,7 +106,7 @@ func FanDataSourceSchema(ctx context.Context) schema.Schema {
 						AttrTypes: SpecValue{}.AttributeTypes(ctx),
 					},
 				},
-				Optional:            true,
+				Computed:            true,
 				Description:         "FanSpec defines the desired state of Fan",
 				MarkdownDescription: "FanSpec defines the desired state of Fan",
 			},

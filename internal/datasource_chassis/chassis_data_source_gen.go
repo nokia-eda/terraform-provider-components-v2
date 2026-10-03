@@ -106,7 +106,7 @@ func ChassisDataSourceSchema(ctx context.Context) schema.Schema {
 						AttrTypes: SpecValue{}.AttributeTypes(ctx),
 					},
 				},
-				Optional:            true,
+				Computed:            true,
 				Description:         "ChassisSpec defines the desired state of Chassis",
 				MarkdownDescription: "ChassisSpec defines the desired state of Chassis",
 			},
